@@ -1,0 +1,55 @@
+{
+  "name": "@amlhubs/smof",
+  "version": "0.0.0",
+  "description": "OMG MOF Support for Semantic Structures (SMOF) 1.0 — TypeScript projection of the metamodel that adds dynamically mutable multiple classifications and powertype semantics to MOF 2. Specializes @amlhubs/mof and @amlhubs/uml. Full §-cited JSDoc per spec.",
+  "main": "dist/smof.js",
+  "types": "dist/smof.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --config vitest.config.js --reporter=verbose --reporter=json --outputFile.json=verify/test-runs/latest.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlhubs/smof.git",
+    "directory": "."
+  },
+  "keywords": [
+    "smof",
+    "smof-1.0",
+    "mof",
+    "metamodel",
+    "semantic-structures",
+    "powertype",
+    "multiple-classification",
+    "omg",
+    "agentic-modeling-language",
+    "aml",
+    "agenihub"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@amlhubs/mof": "^0.0.4",
+    "@amlhubs/uml": "^0.0.2"
+  },
+  "peerDependencies": {
+    "@amlhubs/mof": "^0.0.4",
+    "@amlhubs/uml": "^0.0.2"
+  },
+  "devDependencies": {
+    "@amlhubs/mof": "^0.0.4",
+    "@amlhubs/uml": "^0.0.2",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

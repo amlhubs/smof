@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "noImplicitOverride": true,
+    "types": ["node"]
+  },
+  "include": [
+    "index.ts",
+    "smof.ts"
+  ],
+  "exclude": ["node_modules", "dist", "test", "verify"]
+}

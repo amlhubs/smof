@@ -1,0 +1,37 @@
+# Build output
+dist/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+
+# Auth tokens (CRITICAL — .npmrc holds the GitHub Packages token; never commit)
+.npmrc
+
+# Lockfiles (each consumer regenerates its own)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test runs — verify/test-runs/ holds dated artifacts per testing.md Section A.
+# The convention is local evidence; the run produced for the published version
+# is committed alongside the version bump as proof. Untracked otherwise.
+verify/test-runs/latest.json
+
+# Local work folders
+.work/
+
+# Logs / OS
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Env
+.env
+.env.local
