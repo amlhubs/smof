@@ -847,12 +847,14 @@ export abstract class SMOFAbstractInstanceValue implements ISMOFAbstractInstance
 //   ISMOFAbstractInstanceValue     (§10.1)
 //
 // Classes:
-//   SMOFConstraintExtension          (abstract, §9.1.2.1 stub)
 //   AbstractSMOFElement              (abstract, §9.1.2.2)
-//   SMOFAbstractClass                (abstract stub, §10.1.1)
 //   AbstractSMOFAbstractInstance     (abstract, §10.1.2)
-//   SMOFAbstractLink                 (abstract stub, §10.1)
-//   SMOFAbstractSlot                 (abstract stub, §10.1)
-//   SMOFAbstractLinkSlot             (abstract stub, §10.1)
-//   SMOFAbstractInstanceValue        (abstract stub, §10.1)
+//   SMOFAbstractLink                 (concrete stub, §10.1)
+//   SMOFAbstractSlot                 (concrete stub, §10.1)
+//   SMOFAbstractLinkSlot             (concrete stub, §10.1)
+//   SMOFAbstractInstanceValue        (concrete stub, §10.1)
+//
+// Note: ISMOFConstraintExtension and ISMOFAbstractClass are interface-only at
+// the metamodel surface — their UML id-typed references require a domain-
+// runtime registry that downstream consumers materialize, not the surface.
 // ═══════════════════════════════════════════════════════════════════════════
