@@ -1,6 +1,6 @@
 {
   "name": "@amlhubs/smof",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "OMG MOF Support for Semantic Structures (SMOF) 1.0 — TypeScript projection of the metamodel that adds dynamically mutable multiple classifications and powertype semantics to MOF 2. Specializes @amlhubs/mof and @amlhubs/uml. Full §-cited JSDoc per spec.",
   "main": "dist/smof.js",
   "types": "dist/smof.d.ts",
