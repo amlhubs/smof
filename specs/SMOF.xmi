@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:smof="http://www.omg.org/spec/SMOF/20120801"
+  xmlns:uml="http://www.omg.org/spec/UML/20110701"
+  xmlns:xmi="http://www.omg.org/spec/XMI/20110701">
+  <packagedElement xmi:type="uml:Package" name="SEMOF"
+    xmi:id="_MOF_SEMOF" visibility="public"
+    URI="http://www.omg.org/spec/SMOF/20120801/SEMOF.xmi">
+    <packageMerge xmi:type="uml:PackageMerge"
+      xmi:id="_MOF_SEMOF-PackageMerge.0">
+      <mergedPackage
+        href="www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-EMOF"/>
+    </packageMerge>
+    <packagedElement xmi:type="uml:Class" name="Element"
+      isAbstract="true" xmi:id="_MOF_SEMOF-Element">
+      <generalization xmi:type="uml:Generalization"
+        xmi:id="_MOF_SEMOF-Element-Generalization.0">
+        <general
+          href="http://www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-Reflection-Object"
+        />
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" name="metaclass"
+        visibility="public" isDerived="true"
+        xmi:id="_MOF_SEMOF-Element-metaclass">
+        <association xmi:idref="_MOF_SEMOF-A_metaclass_element"/>
+        <type
+          href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"
+          xmi:id="_MOF_SEMOF-A_metaclass_element-element-LiteralUnlimitedNatural.0"/>
+        <lowerValue xmi:type="uml:LiteralInteger"
+          xmi:id="_MOF_SEMOF-A_metaclass_element-element-LiteralInteger.1"
+        />
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" name="getMetaClass"
+        visibility="public" isQuery="true"
+        xmi:id="_MOF_SEMOF-Element-getMetaCLass">
+        <ownedParameter xmi:type="uml:Parameter" name="result"
+          visibility="public" direction="return"
+          xmi:id="_MOF_SEMOF-Element-getMetaClass-result">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"
+          />
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="getMetaClasses"
+        visibility="public" isQuery="true"
+        xmi:id="_MOF_SEMOF-Element-getMetaClasses">
+        <ownedParameter xmi:type="uml:Parameter" name="result"
+          visibility="public" direction="return"
+          xmi:id="_MOF_SEMOF-Element-getMetaClasses-result">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="reclassify"
+        visibility="public" xmi:id="_MOF_SEMOF-Element-reclassify">
+        <ownedParameter xmi:type="uml:Parameter" name="oldMetaClass"
+          visibility="public"
+          xmi:id="_MOF_SEMOF-Element-reclassify-oldMetaClass">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" name="newMetaClass"
+          visibility="public"
+          xmi:id="_MOF_SEMOF-Element-reclassify-newMetaClass">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="reclassifyAll"
+        visibility="public" xmi:id="_MOF_SEMOF-Element-reclassifyAll">
+        <ownedParameter xmi:type="uml:Parameter" name="newMetaClass"
+          visibility="public"
+          xmi:id="_MOF_SEMOF-Element-reclassifyAll-newMetaClass">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="addMetaClass"
+        visibility="public" xmi:id="_MOF_SEMOF-Element-addMetaClass">
+        <ownedParameter xmi:type="uml:Parameter" name="newMetaClass"
+          visibility="public"
+          xmi:id="_MOF_SEMOF-Element-addMetaClass-newMetaClass">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="removeMetaClass"
+        visibility="public" xmi:id="_MOF_SEMOF-Element-removeMetaClass">
+        <ownedParameter xmi:type="uml:Parameter" name="oldMetaClass"
+          visibility="public"
+          xmi:id="_MOF_SEMOF-Element-removeMetaClass-oldMetaClass">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="container"
+        visibility="public" isQuery="true"
+        xmi:id="_MOF_SEMOF-Element-container">
+        <ownedParameter xmi:type="uml:Parameter" name="result"
+          visibility="public" direction="return"
+          xmi:id="_MOF_SEMOF-Element-container-result">
+          <type
+            href="http://www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-Reflection-Element"
+          />
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" name="getContainers"
+        visibility="public" isQuery="true"
+        xmi:id="_MOF_SEMOF-Element-getContainers">
+        <ownedParameter xmi:type="uml:Parameter" name="result"
+          visibility="public" direction="return"
+          xmi:id="_MOF_SEMOF-Element-getContainers-result">
+          <type
+            href="http://www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-Reflection-Element"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation"
+        name="getContainerForMetaClass" visibility="public"
+        isQuery="true"
+        xmi:id="_MOF_SEMOF-Element-getContainerForMetaClass">
+        <ownedParameter xmi:type="uml:Parameter" name="result"
+          visibility="public" direction="return"
+          xmi:id="_MOF_SEMOF-Element-getContainerForMetaClass-result">
+          <type
+            href="http://www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-Reflection-Element"
+          />
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter"
+          xmi:id="_MOF_SEMOF-Element-getContainerForMetaClass-metaClass"
+          name="metaClass" visibility="public">
+          <type
+            href="http://www.omg.org/spec/UML/20110701/Superstructure.xmi#_Classes-Kernel-Class"
+          />
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association"
+      name="A_metaclass_element" xmi:id="_MOF_SEMOF-A_metaclass_element">
+      <memberEnd xmi:idref="_MOF_SEMOF-Element-metaclass"/>
+      <memberEnd xmi:idref="_MOF_SEMOF-A_metaclass_element-element"/>
+      <ownedEnd xmi:type="uml:Property" name="element"
+        visibility="public"
+        xmi:id="_MOF_SEMOF-A_metaclass_element-element">
+        <type xmi:idref="_MOF_SEMOF-Element"/>
+        <association xmi:idref="_MOF_SEMOF-A_metaclass_element"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"
+          xmi:id="_MOF_SEMOF-A_metaclass_element-element-LiteralUnlimitedNatural.2"/>
+        <lowerValue xmi:type="uml:LiteralInteger" value="0"
+          xmi:id="_MOF_SEMOF-A_metaclass_element-element-LiteralInteger.3"
+        />
+      </ownedEnd>
+      <navigableOwnedEnd
+        xmi:idref="_MOF_SEMOF-A_metaclass_element-element"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" name="SCMOF"
+    xmi:id="_MOF-SCMOF" visibility="public"
+    URI="http://www.omg.org/spec/MOF/20120801/SCMOF.xmi">
+    <packageMerge xmi:type="uml:PackageMerge"
+      xmi:id="_MOF-SCMOF-PackageMerge.0">
+      <mergedPackage
+        href="www.omg.org/spec/MOF/20110701/MOF.xmi#_MOF-CMOF"/>
+    </packageMerge>
+    <packageMerge xmi:type="uml:PackageMerge"
+      xmi:id="_MOF-SCMOF-PackageMerge.1">
+      <mergedPackage
+        href="www.omg.org/spec/MOF/20120801/SEMOF.xmi#_MOF-SEMOF"/>
+    </packageMerge>
+  </packagedElement>
+</xmi:XMI>
